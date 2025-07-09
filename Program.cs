@@ -9,4 +9,12 @@
     Console.WriteLine("Use the arrow keys to move. Try to reach the * to win!");
     Console.WriteLine("Press any key to start...");
     Console.ReadKey();
+
+    string[] mapRows = File.ReadAllLines("map.txt");
+    Console.Clear();
+    for (int i = 0; i < mapRows.Length; i++)
+    {
+            Console.WriteLine(mapRows[i]);
+    }
     
+
